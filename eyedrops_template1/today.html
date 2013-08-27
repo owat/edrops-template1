@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html><head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<!--Declare page as mobile friendly --> 
+<meta name="viewport" content="user-scalable=no, initial-scale=1.0, maximum-scale=1.0"/>
+<!-- Declare page as iDevice WebApp friendly -->
+<meta name="apple-mobile-web-app-capable" content="yes"/>
+<!-- iDevice WebApp Splash Screen, Regular Icon, iPhone, iPad, iPod Retina Icons -->
+<link rel="apple-touch-icon-precomposed" sizes="114x114" href="styles/images/splash/splash-icon.png"> 
+<!-- iPhone 3, 3Gs -->
+<link rel="apple-touch-startup-image" href="styles/images/splash/splash-screen.png" 			media="screen and (max-device-width: 320px)" /> 
+<!-- iPhone 4 -->
+<link rel="apple-touch-startup-image" href="styles/images/splash/splash-screen@2x.png" 		media="(max-device-width: 480px) and (-webkit-min-device-pixel-ratio: 2)" /> 
+<!-- iPhone 5 -->
+<link rel="apple-touch-startup-image" sizes="640x1096" href="styles/images/splash/splash-screen@3x.png" />
+<!-- iPad landscape -->
+<link rel="apple-touch-startup-image" sizes="1024x748" href="styles/images/splash/splash-screen-ipad-landscape" media="screen and (min-device-width : 481px) and (max-device-width : 1024px) and (orientation : landscape)" />
+<!-- iPad Portrait -->
+<link rel="apple-touch-startup-image" sizes="768x1004" href="styles/images/splash/splash-screen-ipad-portrait.png" media="screen and (min-device-width : 481px) and (max-device-width : 1024px) and (orientation : portrait)" />
+<!-- iPad (Retina, portrait) -->
+<link rel="apple-touch-startup-image" sizes="1536x2008" href="styles/images/splash/splash-screen-ipad-portrait-retina.png"   media="(device-width: 768px)	and (orientation: portrait)	and (-webkit-device-pixel-ratio: 2)"/>
+<!-- iPad (Retina, landscape) -->
+<link rel="apple-touch-startup-image" sizes="1496x2048" href="styles/images/splash/splash-screen-ipad-landscape-retina.png"   media="(device-width: 768px)	and (orientation: landscape)	and (-webkit-device-pixel-ratio: 2)"/>
+
+<!-- Page Title -->
+<title>Epsilon Elements | Mobile Framework Starter</title>
+
+<!-- Stylesheet Load -->
+<link href="styles/style.css"				rel="stylesheet" type="text/css">
+<link href="styles/framework-style.css" 	rel="stylesheet" type="text/css">
+<link href="styles/framework.css" 			rel="stylesheet" type="text/css">
+<link href="styles/framework-tablet.css"	rel="stylesheet" type="text/css" media="only screen and (min-width: 767px)"/>
+<link href="styles/bxslider.css"			rel="stylesheet" type="text/css">
+<link href="styles/icons.css"				rel="stylesheet" type="text/css">
+<link href="styles/retina.css" 				rel="stylesheet" type="text/css" media="only screen and (-webkit-min-device-pixel-ratio: 2)" />
+
+
+<!--Page Scripts Load -->
+<script src="scripts/jquery.min.js"		type="text/javascript"></script>	
+<script src="scripts/hammer.js"			type="text/javascript"></script>	
+<script src="scripts/jquery-ui-min.js"  type="text/javascript"></script>
+<script src="scripts/subscribe.js"		type="text/javascript"></script>
+<script src="scripts/contact.js"		type="text/javascript"></script>
+<script src="scripts/photoswipe.js"		type="text/javascript"></script>
+<script src="scripts/bxslider.js"		type="text/javascript"></script>
+<script src="scripts/colorbox.js"		type="text/javascript"></script>
+<script src="scripts/retina.js"			type="text/javascript"></script>
+<script src="scripts/custom.js"			type="text/javascript"></script>
+<script src="scripts/framework.js"		type="text/javascript"></script>
+
+                                    <script src="scripts/edrps.js"			type="text/javascript"></script>
+            <style>
+                                   
+                                   
+                                    #todayList{
+                                        list-style-type: none;
+                                        float:left;
+                                        width:100%;
+                                    }
+                                    #todayList li{
+                                        list-style-type: none;
+                                        width:100%;
+                                        
+                                    }
+                                    @media only screen
+                                    and (min-width : 768px)
+                                    and (max-width : 1024px)
+                                    {
+                                        
+                                    .lImage{
+                                        width:20%;
+                                        float:left;
+                                        display:inline;
+                                    }
+                                    .eImage{
+                                        width:100%;
+                                        float:left;
+                                        
+                                    }
+                                    .lDesc{
+                                        width:45%;
+                                        padding-left:1em;
+                                        float:left;
+                                        text-align:center;
+                                        
+                                        display:inline;
+                                    }
+                                    .lDescTxt{
+                                        font-size:1.5em;
+                                        display:inline;
+
+                                    }
+                                    .lDescTime{
+                                        display:inline;
+color:#000000;
+                                    }
+                                    .lTake{
+                                        width:20%;
+                                        padding-left:1em;
+                                        
+                                        display:inline;
+                                    }
+                                    }
+                                    @media only screen
+                                    and (min-device-width : 320px)
+                                    {
+                                      
+                                        .lImage{
+                                            width:15%;
+                                            float:left;
+                                            display:inline;
+                                        }
+                                        .eImage{
+                                            width:100%;
+                                            float:left;
+                                            
+                                        }
+                                        .lDesc{
+                                            width:50%;
+                                            margin-left:.3em;
+                                            float:left;
+                                            text-align:center;
+                                            
+                                            display:inline;
+                                        }
+                                        .lDescTxt{
+                                            font-size:1em;
+                                            display:inline;
+                                            
+                                        }
+                                        .lDescTime{
+                                            display:inline;
+                                            color:#000000;
+                                        }
+                                        .lTake{
+                                            width:10%;
+                                            padding-left:.3em;
+                                            
+                                            display:inline;
+                                        }
+                                    }
+                                    
+      </style>
+                                <script>
+                                  
+                             function loadToday() {
+
+
+                               //  document.getElementById("tDate").innerHTML= newDate.today();
+                                // document.getElementById("tTime").innerHTML= newDate.timeNow();
+                                                      var url ="http://www.diamondstardevelopment.com/api/MToday/12";
+                                                      $.get(url,
+                                                            function(data){
+                                    alert(data);
+                                                            var output = jQuery.parseJSON(data);
+                                                            buildToday(output);
+                                                            });
+
+                                                    }
+                                    function buildToday(data)
+                                    {
+                                    alert(data);
+                                        var output = "";
+                                        if (data.length > 0)
+                                        {
+                                            for (i=0; i< data.length; i++)
+                                            {
+                                                output += "<li><div class='lImage'><image class='eImage'src='http://firstaid-supply.com/picturesweb/Eye%20Care/Aditionaleye/m-702-12t.jpg'/></div>";
+                                                
+                                                output += "<div class='lDesc'><ul><li><h4>Title Of Drug</h4></li>";
+                                                output += "<li class='lDescTxt'>Due at: <label class='lDescTime'>"+ data[i].Time+"</label> </li>";
+                                                output += "<li>Last Taken: June 1, 2013 12:00 pm</li></ul></div>";
+                                                output += "<div class='lTake'><a href='' class='grey button'>Take Now</a></div><br clear='all'>";
+                                                output += "<br clear='all'><div class='decoration'></div></li>";
+                                            }
+                                            
+                                        }
+                                        document.getElementById("todayList").innerHTML = output;
+                                    }
+                                                </script>
+                     
+    
+</head>
+
+<body onload="loadToday();">
+
+<div id="preloader">
+	<div id="status">
+    	<p class="center-text">
+			Loading the content...
+            <em>Loading depends on your connection speed!</em>
+        </p>
+    </div>
+</div>
+
+<div class="navigation five-icons">
+    <a href="today.html" class="nav-icon home-icon">Today</a>
+    <a href="meds.html" class="nav-icon about-icon">Meds</a>
+    <a href="#" class="nav-icon deploy-submenu-two folio-icon">Gallery</a>
+    <a href="blog.html" class="nav-icon blog-icon">Blog</a>
+    <a href="contact.html" class="nav-icon mail-icon">Contact</a>
+</div>
+
+<div class="submenu-one submenu-five-icons">
+    <a href="other.html" class="nav-icon other-icon">Others</a>
+    <a href="jquery.html" class="nav-icon jquery-icon">jQuery</a>
+    <a href="type.html" class="nav-icon type-icon">Type</a>
+    <a href="intro.html" class="nav-icon about-icon">Intro</a>
+    <a href="" class="nav-icon close-icon close-submenu">Close</a>
+</div>
+
+<div class="submenu-two submenu-five-icons">
+    <a href="onecol.html" class="nav-icon one-column-icon">One Col</a>
+    <a href="twocol.html" class="nav-icon two-column-icon">Two Cols</a>
+    <a href="full.html" class="nav-icon fullwidth-icon">Full Width</a>
+    <a href="swipe.html" class="nav-icon swipable-icon">Swipable</a>
+    <a href="videos.html" class="nav-icon video-icon">Videos</a>
+    <a href="close.html" class="nav-icon close-icon close-submenu">Close</a>
+</div>
+
+<div class="tablet-wrapper">
+    <div class="content">
+    	<div class="header">
+        	<div class="logo">
+            	<img src="styles/images/misc/logo.png" width="89" class="replace-2x" alt="img">
+            </div>
+            <div class="socials">
+            	<a href="#"><img width="24" src="styles/images/misc/facebook.png" alt="img"></a>
+                <a href="#"><img width="24" src="styles/images/misc/twitter.png" alt="img"></a>
+                <a href="#"><img width="24" src="styles/images/misc/email.png" alt="img"></a>
+            </div>
+        </div>
+        <div class="decoration"></div>   
+    
+	<div class="column-responsive no-bottom">
+      <ul id="todayList" ></ul>
+    </div>     
+    
+    <div class="decoration"></div>
+    <p class="center-text copyright">Copyright 2013. All rights reserved!</p>
+                
+    </div>
+</div>
+
+
+
+</body>
+</html>
+
+
+<!--
+
+
+
+-->
