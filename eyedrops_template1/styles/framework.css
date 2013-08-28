@@ -124,7 +124,9 @@ License Restrictions: You are not allowed to remove these comments, or take cred
 .column p span{				float:left;	margin-right:10px;	margin-top:5px;}
 .column h1,h2,h3,h4,h5{		padding-top:0px;}
 
+
 .one-third{		float:left;	width:28%;	margin-left:4.5%;	margin-right:3.5%;}
+.two-third{		float:left;	width:50%;	margin-left:4.5%;	margin-right:3.5%;}
 .one-half{		float:left;	width:46%;	margin-left:3.5%;	margin-right:3.5%;}
 .one-third img{ padding-bottom:5px;}
 .one-half img{ padding-bottom:5px;}
@@ -1237,13 +1239,14 @@ table tr:hover td{
 
 .contact-form{
 	margin-bottom:20px;
+
 }
 
 .contactNameField{
 	padding-bottom:5px;	
 	font-size:12px;
 }
-
+ 
 .contactNameField span{
 	float:right;
 	opacity:0.2;
@@ -1258,6 +1261,16 @@ table tr:hover td{
 	float:right;
 	opacity:0.2;
 }
+
+ @media only screen
+                                    and (min-width : 768px)
+                                    and (max-width : 1024px)
+                                    {
+                                  .contactNameField, .contactEmailField{
+	padding-bottom:8px;	
+	font-size:20px;
+}      
+                                        }
 
 .contactMessageTextarea{
 	padding-bottom:5px;
@@ -1309,7 +1322,7 @@ table tr:hover td{
 }
 
 .contactField{
-	height:30px;
+	height:40px;
 	padding-left:10px;
 	padding-right:10px;
 	margin-bottom:10px;
